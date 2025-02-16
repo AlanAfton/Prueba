@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro de Autos</title>
+</head>
+<style>
+    body {
+      font-family: sans-serif;
+      background-color: #d5d8dc ;
+      color: #333;
+    }
+  
+  
+    h1 {
+      color: #007bff;
+    }
+  
+  
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  
+  
+    label {
+      display: block;
+      margin-bottom:  
+   5px;
+    }
+  
+  
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid  
+   #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+  
+  
+    input[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;  
+  
+  
+    }
+  
+  
+    /* Estilos para el banner */
+    #banner {
+      text-align: right;
+    }
+  
+  
+    #banner img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 100%;
+      height: auto;
+    }
+  
+  
+    /* Estilos para los botones */
+    .container {
+      display: flex;           /* Activa flexbox para el contenedor */
+      justify-content: center; /* Centra los elementos horizontalmente */
+      flex-wrap: wrap;        /* Permite que los botones se ajusten en varias filas */
+    }
+  
+  
+    a.button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-decoration: none;
+      color: #fff;
+      background-color:rgb(139, 10, 10);
+      border: none;  
+      border-radius:  
+   5px;
+      cursor: pointer;  
+   
+      margin: 10px;           /* Espacio alrededor de cada botón */
+      width: calc(25% - 20px); /* Ancho del 25% menos el margen */
+      box-sizing: border-box;  /* Incluye el padding y border en el ancho */
+    }
+  
+  
+    a.button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+  <P align="left"><img src="img/logo3.png" alt="100" width="1280"></P>
+  <P align="center"><FONT FACE="Algerian" SIZE="24" COLOR="#000000">ASIGNAR ACTIVIDADES</FONT></P>
+  <P align="center"><FONT FACE="Algerian" SIZE="12" COLOR="#B40404">CENTRO DE SOPORTE CONTINUO MAQUINARIA Y EQUIPO S.A. DE C.V.</FONT></P>
+<body>
+    
+    <form action="conexion4.php" method="post">
+        <label for="marca">Marca:</label>
+        <input type="text" id="marca" name="marca" required><br>
+        <label for="modelo">Modelo:</label>
+        <input type="text" id="modelo" name="modelo" required><br>
+        <label for="anio">Anio:</label>
+        <input type="number" id="anio" name="anio" required><br>
+        <label for="placas">Placas:</label>
+        <input type="text" id="placas" name="placas" required><br>
+        <label for="empleado">Empleado:</label>
+        <select name="empleado" id="empleado">
+            <option value="SELECCIONE UN EMPLEADO">SELECCIONE UN EMPLEADO</option>
+            <option value="Jose Isaac Solis Morales">Jose Isaac Solis Morales</option>
+            <option value="Salvador Ordanez Sanchez">Salvador Ordanez Sanchez</option>
+            <option value="Erik Rafael Gomez Jaime">Erik Rafael Gomez Jaime</option>
+            <option value="Agustin Aldama Ortiz">Agustin Aldama Ortiz</option>
+            <option value="Ana Belen Barrera Uribe">Ana Belen Barrera Uribe</option>
+            <option value="Araceli Recorder Romero">Araceli Recorder Romero</option>
+            <option value="Minerva Delgado Pacheco">Minerva Delgado Pacheco</option>
+            <option value="Rolando Jesus Flores Montoya">Rolando Jesus Flores Montoya</option>
+            <option value="otro">Otro</option>
+        </select>
+        <input type="text" name="empleado_otro" id="empleado_otro" style="display: none;">
+
+        </select><br>
+        <input type="submit" value="AGREGAR">
+    </form>
+    <a href="index.php" class="button">REGRESAR A MENU PRINCIPAL</a>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Registro de Empleados</title>
+    <style>
+        body {
+          font-family: sans-serif;
+          background-color: #d5d8dc ;
+          color: #333;
+        }
+      
+        h1 {
+          color: #007bff;
+        }
+      
+        form {
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          max-width: 500px;
+          margin: 0 auto;
+        }
+      
+        label {
+          display: block;
+          margin-bottom:  
+       5px;
+        }
+      
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        textarea,
+        select {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 15px;
+          border: 1px solid  
+       #ddd;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+      
+        input[type="submit"] {
+          background-color: #007bff;
+          color: #fff;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;  
+      
+        }
+      
+        /* Estilos para el banner */
+        #banner {
+          text-align: right;
+        }
+      
+        #banner img {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 100%;
+          height: auto;
+        }
+      
+        /* Estilos para los botones */
+        .container {
+          display: flex;           /* Activa flexbox para el contenedor */
+          justify-content: center; /* Centra los elementos horizontalmente */
+          flex-wrap: wrap;        /* Permite que los botones se ajusten en varias filas */
+        }
+      
+        a.button {
+          display: inline-block;
+          padding: 10px 20px;
+          font-size: 16px;
+          text-decoration: none;
+          color: #fff;
+          background-color: #8A0808;
+          border: none;  
+          border-radius:  
+       5px;
+          cursor: pointer;  
+       
+          margin: 10px;           /* Espacio alrededor de cada botón */
+          width: calc(25% - 20px); /* Ancho del 25% menos el margen */
+          box-sizing: border-box;  /* Incluye el padding y border en el ancho */
+        }
+      
+        a.button:hover {
+          background-color: #0056b3;
+        }
+        form {
+        /* Centrar el formulario en la página */
+        margin: 0 auto;
+        width: 400px;
+        /* Esquema del formulario */
+        padding: 1em;
+        border: 1px solid #ccc;
+        border-radius: 1em;
+      }
+      
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      form li + li {
+        margin-top: 1em;
+      }
+      
+      label {
+        /* Tamaño y alineación uniforme */
+        display: inline-block;
+        width: 90px;
+        text-align: right;
+      }
+      
+      input,
+      textarea {
+        /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+           Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+        font: 1em sans-serif;
+      
+        /* Tamaño uniforme del campo de texto */
+        width: 300px;
+        box-sizing: border-box;
+      
+        /* Hacer coincidir los bordes del campo del formulario */
+        border: 1px solid #999;
+      }
+      
+      input:focus,
+      textarea:focus {
+        /* Destacado adicional para elementos que tienen el cursor */
+        border-color: #000;
+      }
+      
+      textarea {
+        /* Alinear los campos de texto multilínea con sus etiquetas */
+        vertical-align: top;
+      
+        /* Proporcionar espacio para escribir texto */
+        height: 5em;
+      }
+      
+      .button {
+        /* Alinear los botones con los campos de texto */
+        padding-left: 90px; /* mismo tamaño que los elementos de la etiqueta */
+      }
+      
+      button {
+        /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
+           entre las etiquetas y sus campos de texto */
+        margin-left: 0.5em;
+      }
+      </style>      
+</head>
+<P align="left"><img src="img/logo3.png" alt="100" width="1280"></P>
+<P align="center"><FONT FACE="Algerian" SIZE="24" COLOR="#000000">REGISTRAR EMPLEADOS</FONT></P>
+<P align="center"><FONT FACE="Algerian" SIZE="12" COLOR="#B40404">CENTRO DE SOPORTE CONTINUO MAQUINARIA Y EQUIPO S.A. DE C.V.</FONT></P>
+<body>
+    
+    <form action="conexion1.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required><br><br>
+
+        <label for="rol">Rol:</label>   
+
+        <select id="rol" name="rol" required>
+            <option value="tecnico">Tecnico</option>
+            <option value="ingeniero">Ingeniero</option>
+            <option value="vendedor">Vendedor</option>
+            <option value="coordinador">Coordinador</option>
+            <option value="asistente">Asistente</option>
+            <option value="encargado">Encargado</option>
+            <option value="director">Director</option>
+        </select><br><br>
+
+        <label for="area">Area:</label>
+        <select id="area" name="area" required>
+            <option value="servicio">Servicio</option>
+            <option value="administracion">Administracion</option>
+            <option value="almacen">Almacen</option>
+        </select><br><br>
+
+        <label for="telefono">Telefono:</label>
+        <input type="tel" id="telefono" name="telefono" required><br><br>
+
+        <label for="correo">Correo   
+ electronico:</label>
+        <input type="email" id="correo" name="correo" required><br><br>   
+
+        <label for="direccion">Direccion:</label>
+        <textarea id="direccion" name="direccion" required></textarea><br><br>
+
+        <label   
+ for="fecha_contratacion">Fecha de contratacion:</label>
+        <input type="date" id="fecha_contratacion" name="fecha_contratacion"   
+ required><br><br>
+
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado" required>
+            <option value="activo">Activo</option>
+            <option value="inactivo">Inactivo</option>
+        </select><br><br>   
+
+        <input type="submit" value="Enviar">   
+        <input type="reset" value="Borrar todo">
+    </form>
+</div>
+<div>
+
+    <a href="index.php" class="button">REGRESAR A MENU PRINCIPAL</a>
+    </div>
+
+</body>
+</html>
